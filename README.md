@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ULTR4 - Nuxt.js Boilerplate
 
 > A [Nuxt.js](https://nuxtjs.org/) Boilerplate. 
@@ -88,3 +89,6 @@ $ git status
 
 ## push changes to the repository
 $ git push origin master
+=======
+# ameca
+>>>>>>> d102eadea3f204f7dd593f3565215dbd6fc1c2ab
