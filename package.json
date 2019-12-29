@@ -1,7 +1,7 @@
 {
-  "name": "nuxt-bp",
+  "name": "AMECA",
   "version": "1.0.0",
-  "description": "A Nuxt.js Boilerplate. Features Axios, PWA, Nuxt Webfont Loader, Nuxt Imagemin, SASS Loader &amp; ESLint.",
+  "description": "Alex`s Medical &amp; Educational Clinic in Africa.",
   "author": "Daniel Wakefield",
   "private": true,
   "scripts": {

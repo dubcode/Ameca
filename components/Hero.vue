@@ -17,7 +17,7 @@
 }
 @media only screen and (min-width: 1440px) {
   .hero {
-    height:20em;
+    height:16em;
   }
 }
 </style>

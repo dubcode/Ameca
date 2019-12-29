@@ -4,8 +4,15 @@
       <header class="header__wrapper --row ">
         <div class="--ctr --fill">
           <div class="header__grid">
-            <Logo />
-            <Hamburger :menu-close="menuClose" @toggle="menuClose = !menuClose" />
+            <div>
+              <Logo />
+            </div>
+            <div></div>
+            <div>
+              <Hamburger :menu-close="menuClose" @toggle="menuClose = !menuClose" />
+              <Directorysvg />
+              <Housesvg />
+            </div>
           </div>
         </div>
       </header>
@@ -18,11 +25,15 @@
 import Hamburger from '~/components/Hamburger.vue'
 import Logo from '~/components/Logo.vue'
 import Nav from '~/components/Nav.vue'
+import Housesvg from '~/components/Housesvg.vue'
+import Directorysvg from '~/components/Directorysvg.vue'
 export default {
   components: {
     Hamburger,
     Logo,
-    Nav
+    Nav,
+    Housesvg,
+    Directorysvg
   },
 
   props: {

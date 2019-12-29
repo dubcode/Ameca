@@ -5,12 +5,14 @@
       <Hero />
       <div class="--row">
         <div class="--ctr">
-          <div class="l1">
-            <div class="l1-content">
-              <nuxt />
-            </div>
-            <div class="l1-side">
-              sidebar
+          <div class="--row">
+            <div class="l1">
+              <div class="l1-content">
+                <nuxt />
+              </div>
+              <div class="l1-side">
+                <Sidebar />
+              </div>
             </div>
           </div>
         </div>
@@ -23,12 +25,14 @@
 <script>
 import Header from '~/components/Header.vue'
 import Hero from '~/components/Hero.vue'
+import Sidebar from '~/components/Sidebar.vue'
 import Footer from '~/components/Footer.vue'
 export default {
   name: 'ScrollTop',
   components: {
     Header,
     Hero,
+    Sidebar,
     Footer
   },
   data () {
@@ -92,11 +96,21 @@ export default {
 <style scoped>
 .l1 {
   display: grid;
-  grid-gap: 2em;
-  grid-template-columns: 1.6fr 0.4fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "content side";
+  grid-gap: 0;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "content" "side";
+  width: 100%;
 }
 .l1-content { grid-area: content; }
-.l1-side {background: #222; grid-area: side; }
+.l1-side {grid-area: side; }
+@media only screen and (min-width: 768px) {
+  .l1 {
+    grid-gap: 4em;
+    grid-template-columns: 1.4fr 0.6fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "content side";
+  }
+}
+
 </style>

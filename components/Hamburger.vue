@@ -1,5 +1,5 @@
 <template>
-  <div class="header__button --flex__right --fill">
+  <div class="header__button --right">
     <button :class="{'active': menuClose, 'inactive': !menuClose}" @click="clickHandler">
       <span />
       <span />
