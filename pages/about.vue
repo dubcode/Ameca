@@ -41,9 +41,6 @@ export default {
     getSingle () {
       this.id = this.$route.params.id
       axios.get(this.baseUrl, {
-        headers: {
-          'Access-Control-Allow-Origin': '*'
-        }
       })
         .then((response) => {
           this.title = response.data.title.rendered

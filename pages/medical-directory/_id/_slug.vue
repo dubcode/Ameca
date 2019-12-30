@@ -1,5 +1,13 @@
 <template>
   <div class="--row">
+    <!--header break-->
+        <div class="--row --hr --m3">
+          <nuxt-link to="/medical-directory" class="t1">
+            Medical Directory
+          </nuxt-link>
+        </div>
+    <!--header break-->
+
     <div class="directory__thumb">
         <h4 class="t2 --m2" v-html="this.title" />
         <template v-if="this.thumb">

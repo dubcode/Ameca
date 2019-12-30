@@ -93,7 +93,9 @@ img {
   float: right;
 }
 
-.grid-2 {
+.grid-2,
+.grid-2b,
+.grid-2c {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 2em;
@@ -573,6 +575,16 @@ a.t1:hover {
 @media only screen and (min-width: 768px) {
   .grid-2 {
     grid-template-columns: 1fr 1fr;
+    grid-gap: 2em;
+    margin: 0 0 2em 0;
+  }
+  .grid-2b {
+    grid-template-columns: 0.8fr 1.2fr;
+    grid-gap: 2em;
+    margin: 0 0 2em 0;
+  }
+  .grid-2c {
+    grid-template-columns: 1.2fr 0.8fr;
     grid-gap: 2em;
     margin: 0 0 2em 0;
   }

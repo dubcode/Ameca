@@ -12,8 +12,16 @@
             <nuxt-link to="/about" class="t1 --m1">
               About us
             </nuxt-link>
-            <div class="videoWrapper --m1">
-              <iframe width="560" height="349" src="//www.youtube.com/embed/MqShp7QWQBo?&amp;autoplay=0&amp;modestbranding=1&amp;wmode=transparent&amp;controls=1&amp;showinfo=0&amp;rel=0" frameborder="0" allowfullscreen="true" />
+            <div class="--row --m1">
+              <a href="https://www.youtube.com/watch?v=MqShp7QWQBo&feature=emb_title" target="_blank">
+                <img
+                  width="560"
+                  height="349"
+                  src="~assets/images/video.jpg"
+                  alt="AMECA Video"
+                  title="Play Video"
+                >
+              </a>
             </div>
             <p>
               Founded in December 2006 by Ruth Markus, in memory of her only child Alex.&nbsp; AMECA is committed to healthcare delivery, training healthcare professionals and to healthcare education in sub-Saharan African countries, through sustainable initiatives. <a class="rm" href="/about/">Read More</a>
@@ -63,7 +71,7 @@
     <div class="--row">
       <div class="--ctr">
         <!--grid-->
-        <div class="grid-2">
+        <div class="grid-2b">
           <!--col1-->
           <div>
             <img
@@ -73,16 +81,18 @@
           </div>
           <!--col1-->
           <!--col2-->
-          <div>
-            <nuxt-link to="maternity-unit" class="t2 --m2">
-              Project: Maternity Unit
-            </nuxt-link>
-            <p>
-              On average, women in labour walk about 4 – 5 hours over steep hills and uneven rocky paths to reach care.  These journeys present even greater challenges at night and during the rainy season, often resulting in tragic consequences for mother and child.
-            </p>
-            <p>
-              <nuxt-link to="maternity-unit">Read about our current initiative to build a maternity unit at Chilaweni</nuxt-link>
-            </p>
+          <div class="--flex__left">
+            <div>
+              <nuxt-link to="maternity-unit" class="t2 --m2">
+                Project: Maternity Unit
+              </nuxt-link>
+              <p>
+                On average, women in labour walk about 4 – 5 hours over steep hills and uneven rocky paths to reach care.  These journeys present even greater challenges at night and during the rainy season, often resulting in tragic consequences for mother and child.
+              </p>
+              <p>
+                <nuxt-link to="maternity-unit">Read about our current initiative to build a maternity unit at Chilaweni</nuxt-link>
+              </p>
+            </div>
           </div>
           <!--col2-->
         </div>
@@ -107,20 +117,22 @@
     <div class="--row --m1">
       <div class="--ctr">
         <!--grid-->
-        <div class="grid-2">
+        <div class="grid-2c">
           <!--col1-->
-          <div>
-            <p>
-              The ability to access healthcare facilities sadly remains a huge challenge for so many impoverished rural villages in Malawi. Prior to the completion of The AMECA Primary Healthcare Clinic, 38,000 people in 22 villages had no prior access to any meaningful healthcare.
-            </p>
-            <p>
-              <nuxt-link to="/ameca-healthcare-clinic" class="--em">
-                "It always seems impossible until it's done."<br>Nelson Mandela
-              </nuxt-link>
-            </p>
-            <p>
-              <nuxt-link to="/ameca-healthcare-clinic">Read more</nuxt-link>
-            </p>
+          <div class="--flex__left">
+            <div>
+              <p>
+                The ability to access healthcare facilities sadly remains a huge challenge for so many impoverished rural villages in Malawi. Prior to the completion of The AMECA Primary Healthcare Clinic, 38,000 people in 22 villages had no prior access to any meaningful healthcare.
+              </p>
+              <p>
+                <nuxt-link to="/ameca-healthcare-clinic" class="--em">
+                  "It always seems impossible until it's done."<br>Nelson Mandela
+                </nuxt-link>
+              </p>
+              <p>
+                <nuxt-link to="/ameca-healthcare-clinic">Read more</nuxt-link>
+              </p>
+            </div>
           </div>
           <!--col1-->
           <!--col2-->
@@ -248,19 +260,21 @@
     <div class="--row" v-for="post in displayedPosts" :key="post.id">
       <div class="--ctr">
         <!--grid-->
-        <div class="grid-2">
+        <div class="grid-2b">
           <!--col1-->
           <div>
             <img :src="post.images.medium" :alt="post.title.rendered"/>
           </div>
           <!--col1-->
           <!--col2-->
-          <div>
-            <router-link :to="{ path: '/news/'+ post.id +'/' + post.slug}" class="t2 --m2" v-html="post.title.rendered" />
-            <p v-html="post.excerpt.rendered" />
-            <p>
-              <router-link :to="{ path: '/news/'+ post.id +'/' + post.slug}" class="rm">Read More</router-link>
-            </p>
+          <div class="--flex__left">
+            <div>
+              <router-link :to="{ path: '/news/'+ post.id +'/' + post.slug}" class="t2 --m2" v-html="post.title.rendered" />
+              <p v-html="post.excerpt.rendered" />
+              <p>
+                <router-link :to="{ path: '/news/'+ post.id +'/' + post.slug}" class="rm">Read More</router-link>
+              </p>
+            </div>
           </div>
           <!--col2-->
         </div>

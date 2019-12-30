@@ -3,7 +3,7 @@
 
     <!--header break-->
         <div class="--row --hr --m3">
-          <nuxt-link to="/directory" class="t1">
+          <nuxt-link to="/medical-directory" class="t1">
             Medical Directory
           </nuxt-link>
         </div>
