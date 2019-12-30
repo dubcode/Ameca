@@ -24,7 +24,7 @@
             <li v-for="link in nav_set_3" :key="link.link" class="--row">
               <a :href="link.link" class="--row">{{ link.title }}</a>
             </li>
-            <li><a href="http://ameca.org.uk/ui/contact-form/" target="_blank">Contact</a></li>
+            <li><a href="https://api.ameca.org.uk/contact-form/" target="_blank">Contact</a></li>
           </ul>
         </div>
 
