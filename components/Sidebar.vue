@@ -38,10 +38,10 @@
           <p>The AMECA Medical Database promotes opportunities to share healthcare skills, training and expertise between the UK and Africa. Browse the Directory</p>
     </div>
     <div class="--row --m3">
-        <a href="http://ameca.org.uk/ui/contact-form/" target="_blank" class="t3 --m1">
+        <a href="http://api.ameca.org.uk/contact-form/" target="_blank" class="t3 --m1">
         Newsletter
         </a>
-        <p><a href="http://ameca.org.uk/ui/contact-form/" target="_blank">Click here to receive our online newletter.</a><br/>Content includes:</p>
+        <p><a href="http://api.ameca.org.uk/contact-form/" target="_blank">Click here to receive our online newletter.</a><br/>Content includes:</p>
         <ul>
           <li>progress on our projects</li>
           <li>our future plans</li>

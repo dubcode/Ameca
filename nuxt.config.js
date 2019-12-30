@@ -1,3 +1,4 @@
+import axios from 'axios'
 export default {
   mode: 'universal',
   /*
@@ -13,10 +14,10 @@ export default {
    */
   head: {
     title: 'AMECA | Alex`s Medical &amp; Educational Clinic in Africa',
-      bodyAttrs: {
-        class: 'category'
-      },
-      meta: [
+    bodyAttrs: {
+      class: 'category'
+    },
+    meta: [
       { hid: 'og:title', name: 'og:title', content: 'Alex`s Medical &amp; Educational Clinic in Africa' },
       { hid: 'description', name: 'description', content: 'AMECA is committed to healthcare delivery, training healthcare professionals and to healthcare education in sub-Saharan African countries, through sustainable initiatives.' },
       { hid: 'og:description', name: 'og:description', content: 'AMECA is committed to healthcare delivery, training healthcare professionals and to healthcare education in sub-Saharan African countries, through sustainable initiatives. ' }
@@ -24,31 +25,22 @@ export default {
   },
   /** Set Global Api Base URL */
   env: {
-    baseUrl: 'https://ameca.org.uk/ui/wp-json/wp/v2/'
+    baseUrl: 'https://api.ameca.org.uk/wp-json/wp/v2/'
   },
   /*
   ** Generate Dynamic Routes
   No need for embed param but does need per_page=100
   */
- generate: {
-  routes: function () {
-    let posts = axios.get('https://ameca.org.uk/ui/wp-json/wp/v2/posts?per_page=100')
-    .then((res) => {
-      return res.data.map((post) => {
-        return '/news/' + post.id + '/' + post.slug
-      })
-    })
-    let hospitals = axios.get('https://api.com/users')
-    .then((res) => {
-      return res.data.map((hospital) => {
-        return '/medical_directory/' + hospital.id + '/' + post.slug
-      })
-    })
-    return Promise.all([posts, users]).then(values => {
-      return values.join().split(',');
-    })
-  }
-},
+  generate: {
+    routes () {
+      return axios.get('https://api.ameca.org.uk/wp-json/wp/v2/posts?per_page=100')
+        .then((res) => {
+          return res.data.map((post) => {
+            return '/news/' + post.id + '/' + post.slug
+          })
+        })
+    }
+  },
   /*
    ** Customize the progress-bar color
    */

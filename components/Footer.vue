@@ -9,7 +9,7 @@
           </p>
           <p>
             You can donate by filling in
-            <a href="http://ameca.org.uk/ui/wp-content/uploads/2015/05/2014-Ameca-donation-form.pdf" target="_blank">this form</a>
+            <a href="http://api.ameca.org.uk/wp-content/uploads/2015/05/2014-Ameca-donation-form.pdf" target="_blank">this form</a>
             or directly via
             <a href="http://uk.virginmoneygiving.com/charities/TheAMECATrust" target="_blank">Virgin money</a>
             giving website.
@@ -23,9 +23,9 @@
         <!-- col2 -->
         <div>
           <p><b>Sign up to our Newsletter</b></p>
-          <p><a href="http://ameca.org.uk/ui/contact-form/" target="_blank">Sign up to receive our online newletter.</a></p>
+          <p><a href="http://api.ameca.org.uk/contact-form/" target="_blank">Sign up to receive our online newletter.</a></p>
           <p>
-            <a href="http://ameca.org.uk/ui/contact-form/" target="_blank">
+            <a href="http://api.ameca.org.uk/contact-form/" target="_blank">
               Click here to to receive regular news &amp; updates through our online newletter.
             </a>
           </p>
@@ -38,7 +38,7 @@
             <b>Contact</b>
           </p>
           <p>
-            <a href="http://ameca.org.uk/ui/contact-form/" target="_blank">
+            <a href="http://api.ameca.org.uk/contact-form/" target="_blank">
               Click here to send us an email.<br><br>
             The AMECA Trust Limited<br>
             Registered Charity No. 1121240 <br>
@@ -85,7 +85,7 @@
   font-weight: bold;
 }
 p.virgin a {
-    background: #000 url(https://ameca.org.uk/wp-content/themes/dubtheme/images/virgin-money-giving.gif) no-repeat center 0;
+    background: #000 url(https://api.ameca.org.uk/wp-content/themes/dubtheme/images/virgin-money-giving.gif) no-repeat center 0;
     color: #8ea0a0;
     height: 55px;
     width: 155px;
@@ -117,7 +117,7 @@ span.wpcf7-list-item {
     margin: 0 0 0 1em;
 }
 .footer .icon{
-  background: url(https://ameca.org.uk/wp-content/themes/dubtheme/images/ftr-icons.gif);
+  background: url(https://api.ameca.org.uk/wp-content/themes/dubtheme/images/ftr-icons.gif);
   background-repeat: no-repeat;
   display: block;
   float: left;
