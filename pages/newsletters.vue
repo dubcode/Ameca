@@ -12,8 +12,7 @@
     <ul class="newsletters --row" v-for="post in displayedPosts" :key="post.id">
       <li class="--row">
         <h3 class="t2 --m2" v-html="post.title.rendered" />
-        <p><b v-html="post.acf.newsletter_date"></b></p>
-        <a href="post.acf.newsletter_url" target="_blank" v-html="post.acf.newsletter_url" />
+        <a :href="post.acf.newsletter_url" target="_blank" v-html="post.acf.newsletter_url" />
       </li>
     </ul>
     <div class="--row --m3">
@@ -31,7 +30,7 @@
 <script>
 import axios from 'axios'
 export default {
-  layout: 'layout-two',
+  layout: 'layout-one',
   data () {
     return {
       posts: [],

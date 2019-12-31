@@ -74,6 +74,12 @@ img {
   align-items: center;
   justify-content: flex-end;
 }
+
+.--flex__bottom__right{
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
 .--fill{
   height: 100%;
   width: 100%;
@@ -163,26 +169,28 @@ img {
 }
 
 /* Header */
-.header {
-  position: fixed;
-  left: 0;
-  top: 0;
+.topnav{
+  position: absolute;
   z-index: 1000;
+  top: 1em;
+  right: 1em;
+}
+.header {
+  background: url('~assets/images/hdr-bg.jpg') no-repeat center center;
+  background-size: cover;
   transition: all ease 0.3s;
+  padding: 13em 0 0 0;
+  margin: 0 0 2em 0;
 }
 
 .header__wrapper {
-  height: 6em;
-  padding: 1em 0;
+  height: 4.5em;
   transition: all ease 0.3s;
 }
 .active .header__wrapper,
 .scrolling .header__wrapper {
   height: auto;
   transition: all ease 0.3s;
-}
-.scrolling .header__wrapper {
-  background: rgba(0,0,0,0.8);
 }
 .scrolling .active .header__wrapper{
   background: transparent;
@@ -200,7 +208,7 @@ img {
 .header-icon {
   float: right;
   margin: 0 1em 0 0;
-  color: #fff;
+  color: #130a03;
   text-decoration: none;
   transform: translateY(5px);
 }
@@ -219,8 +227,9 @@ img {
   height: 20px;
 }
 
+.active .header-icon svg path,
 .header-icon:hover svg path{
-  fill: #d6aa77;
+  fill: #8ea0a0;
 }
 
 /* Logo */
@@ -230,9 +239,8 @@ img {
 }
 
 .header__logo img {
-  height: auto;
-  width: 100%;
-  max-width: 180px;
+  height: 60px;
+  width: 280px;
 }
 
 /* Hamburger */
@@ -255,7 +263,7 @@ img {
   position: absolute;
   height: 2px;
   width: 100%;
-  background: #fff;
+  background: #130a03;
   opacity: 1;
   left: 0;
   -webkit-transform: rotate(0deg);
@@ -285,8 +293,9 @@ img {
   -webkit-transform: rotate(-135deg);
   transform: rotate(-135deg);
 }
+.active .header__button button span,
 .header__button:hover button span {
-  background: #d6aa77;
+  background: #8ea0a0;
 }
 
 /* Nav */
@@ -603,11 +612,13 @@ a.t1:hover {
   .--ctr{
     padding: 0 4em;
   }
+  .topnav{
+    right: 4em;
+  }
   .grid-4 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
   .--md-icon{
-    border: 1px solid #fff;
     line-height: 20px;
     padding: 0.25em 0.5em;
     transform: translateY(0);
@@ -619,12 +630,17 @@ a.t1:hover {
   .header-icon span{
     display: block;
     float: left;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    color: #130a03;
   }
+  .active .header-icon span,
   .header-icon:hover span{
-    color: #d6aa77;
+    color: #8ea0a0;
   }
   .--home-icon{
-    transform: translateY(5px);
+    transform: translateY(4px);
   }
   .nav li a {
     font-size: 1.2em;
@@ -638,11 +654,10 @@ a.t1:hover {
 }
 
 @media only screen and (min-width: 1440px) {
-
-  .header__logo img {
-    width: 280px;
-  }
   .--ctr{
     padding: 0 20em;
+  }
+  .topnav{
+    right: 20em;
   }
 }

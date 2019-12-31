@@ -12,9 +12,7 @@
     <ul class="newsletters --row" v-for="post in displayedPosts" :key="post.id">
       <li class="--row">
         <h3 class="t2 --m2" v-html="post.acf.name" />
-        <p><b v-html="post.acf.year"></b></p>
-        <p><b>University: </b> <span v-html="post.acf.university" /></p>
-        <p><b>Course: </b> <span v-html="post.acf.course" /></p>
+        <p><b>University: </b> <span v-html="post.acf.university" />  <b>Course: </b> <span v-html="post.acf.course" />  <b>Published: </b> <span v-html="post.acf.year" /></p>
         <a :href="post.acf.elective_report" target="_blank">View Report</a>
       </li>
     </ul>

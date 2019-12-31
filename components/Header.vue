@@ -1,5 +1,10 @@
 <template>
   <div :class="{'active': menuClose, 'inactive': !menuClose}">
+    <div class="topnav">
+      <Hamburger :menu-close="menuClose" @toggle="menuClose = !menuClose" />
+      <Directorysvg />
+      <Housesvg />
+    </div>
     <div class="--row header">
       <header class="header__wrapper --row ">
         <div class="--ctr --fill">
@@ -9,9 +14,6 @@
             </div>
             <div></div>
             <div>
-              <Hamburger :menu-close="menuClose" @toggle="menuClose = !menuClose" />
-              <Directorysvg />
-              <Housesvg />
             </div>
           </div>
         </div>
