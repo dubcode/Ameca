@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # AMECA.ORG.UK
 [ameca.org.uk](https://ameca.org.uk/)
 
