@@ -1,4 +1,4 @@
-#Nuxt.js + WP API static generated
+# Nuxt.js + WP API static generated
 
 # AMECA.ORG.UK
 [ameca.org.uk](https://ameca.org.uk/)
